@@ -1,6 +1,6 @@
-let columns = 10;
+let columns = 15;
 let rows = 10;
-let testo = "`V`";
+let testo = "---";
 
 //
 
@@ -22,20 +22,20 @@ function setup() {
   textSize(height / 10);
 
   cam = createCamera();
-  cam.setPosition(90, 300, 0);
+  cam.setPosition(100, 500, 0);
   cam.lookAt(0, 0, 0);
 }
 
 //
 
 function draw() {
-  background("blue");
+  background("pink");
   orbitControl();
 
   let angle = 360 / columns;
   let diameter = textSize();
 
-  fill("white");
+  fill("MediumVioletRed");
 
   rotateY(-frameCount);
   for (let i = 0; i < columns; i++) {
