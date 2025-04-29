@@ -22,8 +22,8 @@ function setup() {
   textSize(height / 10);
 
   cam = createCamera();
-  cam.setPosition(0, 0, 400);
-  cam.lookAt(0, 0, 300);
+  cam.setPosition(90, 300, 0);
+  cam.lookAt(0, 0, 0);
 }
 
 //
